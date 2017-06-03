@@ -8,28 +8,85 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var loginAlertMessage: UIView!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var loginBackground: UIImageView!
+    
+    @IBOutlet weak var loginButton: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        emailField.delegate = self
+        passwordField.delegate = self
+        
+        animateBG()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        animateBG()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+//    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func helpSigningInTapped(_ sender: Any) {
+        performSegue(withIdentifier: "ForgotPasswordSegue", sender: nil)
+        
+    }
+    func animateBG() {
+        let anim = CABasicAnimation(keyPath: "position.x")
+        anim.fromValue = -1638.0 + 150
+        anim.toValue = 1925
+        anim.duration = 30
+        anim.repeatCount = Float.infinity
+        anim.autoreverses = true
+        loginBackground.layer.add(anim, forKey: nil)
+    }
+    
+    func animateAlertMessage() {
+        let anim = CABasicAnimation(keyPath: "opacity")
+        anim.fromValue = 1.0
+        anim.toValue = 0.0
+        anim.duration = 5.0
+        loginAlertMessage.layer.add(anim, forKey: nil)
+        loginAlertMessage.isUserInteractionEnabled = true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string != "" && emailField.text != "" {
+            print("keyboard key click detected")
+            loginButton.image = UIImage(named: "LoginActive")
+            loginButton.isUserInteractionEnabled = true
+        } else {
+            loginButton.image = UIImage(named: "LoginInactive")
+            loginButton.isUserInteractionEnabled = false
+        }
+        return true
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBAction func loginButtonTapped(_ sender: Any) {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if emailField.text == "" || passwordField.text == "" {
+            loginAlertMessage.isHidden = false
+            animateAlertMessage()
+            
+        }
+        loginAlertMessage.isHidden = true
     }
-    */
-
+    
 }

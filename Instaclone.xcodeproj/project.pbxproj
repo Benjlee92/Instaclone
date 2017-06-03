@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		B54A9A341EE2610100D365DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A331EE2610100D365DB /* AppDelegate.swift */; };
-		B54A9A361EE2610100D365DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A351EE2610100D365DB /* ViewController.swift */; };
 		B54A9A391EE2610100D365DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54A9A371EE2610100D365DB /* Main.storyboard */; };
 		B54A9A3B1EE2610100D365DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54A9A3A1EE2610100D365DB /* Assets.xcassets */; };
 		B54A9A3E1EE2610100D365DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54A9A3C1EE2610100D365DB /* LaunchScreen.storyboard */; };
+		B54A9A4A1EE2617200D365DB /* Queen of Heaven.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B54A9A491EE2617200D365DB /* Queen of Heaven.ttf */; };
+		B54A9A4C1EE2631700D365DB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A4B1EE2631700D365DB /* LoginVC.swift */; };
+		B54A9A4E1EE265A500D365DB /* MovingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A4D1EE265A500D365DB /* MovingBackground.swift */; };
+		B54A9A501EE26AEC00D365DB /* BlurredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A4F1EE26AEC00D365DB /* BlurredView.swift */; };
+		B54A9A521EE26DB700D365DB /* LoginCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A511EE26DB700D365DB /* LoginCustomView.swift */; };
+		B56BC3B31EE3425D00DF252C /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56BC3B21EE3425D00DF252C /* ForgotPasswordVC.swift */; };
+		B56BC3B51EE37BD800DF252C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B56BC3B41EE37BD800DF252C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B54A9A301EE2610100D365DB /* Instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54A9A331EE2610100D365DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B54A9A351EE2610100D365DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B54A9A381EE2610100D365DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B54A9A3A1EE2610100D365DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54A9A3D1EE2610100D365DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54A9A3F1EE2610100D365DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54A9A491EE2617200D365DB /* Queen of Heaven.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Queen of Heaven.ttf"; sourceTree = "<group>"; };
+		B54A9A4B1EE2631700D365DB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B54A9A4D1EE265A500D365DB /* MovingBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingBackground.swift; sourceTree = "<group>"; };
+		B54A9A4F1EE26AEC00D365DB /* BlurredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredView.swift; sourceTree = "<group>"; };
+		B54A9A511EE26DB700D365DB /* LoginCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCustomView.swift; sourceTree = "<group>"; };
+		B56BC3B21EE3425D00DF252C /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		B56BC3B41EE37BD800DF252C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		B54A9A321EE2610100D365DB /* Instaclone */ = {
 			isa = PBXGroup;
 			children = (
+				B56BC3B41EE37BD800DF252C /* GoogleService-Info.plist */,
+				B54A9A481EE2615D00D365DB /* Resources */,
+				B54A9A471EE2612600D365DB /* Model */,
+				B54A9A461EE2611F00D365DB /* View */,
+				B54A9A451EE2611400D365DB /* Controller */,
 				B54A9A331EE2610100D365DB /* AppDelegate.swift */,
-				B54A9A351EE2610100D365DB /* ViewController.swift */,
 				B54A9A371EE2610100D365DB /* Main.storyboard */,
 				B54A9A3A1EE2610100D365DB /* Assets.xcassets */,
 				B54A9A3C1EE2610100D365DB /* LaunchScreen.storyboard */,
 				B54A9A3F1EE2610100D365DB /* Info.plist */,
 			);
 			path = Instaclone;
+			sourceTree = "<group>";
+		};
+		B54A9A451EE2611400D365DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B54A9A4B1EE2631700D365DB /* LoginVC.swift */,
+				B56BC3B21EE3425D00DF252C /* ForgotPasswordVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B54A9A461EE2611F00D365DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B54A9A4D1EE265A500D365DB /* MovingBackground.swift */,
+				B54A9A4F1EE26AEC00D365DB /* BlurredView.swift */,
+				B54A9A511EE26DB700D365DB /* LoginCustomView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B54A9A471EE2612600D365DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B54A9A481EE2615D00D365DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B54A9A491EE2617200D365DB /* Queen of Heaven.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54A9A3E1EE2610100D365DB /* LaunchScreen.storyboard in Resources */,
+				B54A9A4A1EE2617200D365DB /* Queen of Heaven.ttf in Resources */,
+				B56BC3B51EE37BD800DF252C /* GoogleService-Info.plist in Resources */,
 				B54A9A3B1EE2610100D365DB /* Assets.xcassets in Resources */,
 				B54A9A391EE2610100D365DB /* Main.storyboard in Resources */,
 			);
@@ -136,8 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54A9A361EE2610100D365DB /* ViewController.swift in Sources */,
+				B54A9A4C1EE2631700D365DB /* LoginVC.swift in Sources */,
 				B54A9A341EE2610100D365DB /* AppDelegate.swift in Sources */,
+				B56BC3B31EE3425D00DF252C /* ForgotPasswordVC.swift in Sources */,
+				B54A9A4E1EE265A500D365DB /* MovingBackground.swift in Sources */,
+				B54A9A521EE26DB700D365DB /* LoginCustomView.swift in Sources */,
+				B54A9A501EE26AEC00D365DB /* BlurredView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +353,7 @@
 				B54A9A441EE2610100D365DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
