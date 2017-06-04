@@ -14,8 +14,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginBackground: UIImageView!
-    
     @IBOutlet weak var loginButton: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +30,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+    // Creates a white status bar.
         UIApplication.shared.statusBarStyle = .lightContent
     }
     
@@ -40,9 +41,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 
     @IBAction func helpSigningInTapped(_ sender: Any) {
         performSegue(withIdentifier: "ForgotPasswordSegue", sender: nil)
-        
     }
+    
     func animateBG() {
+    // Animation for the background
         let anim = CABasicAnimation(keyPath: "position.x")
         anim.fromValue = -1638.0 + 150
         anim.toValue = 1925
@@ -53,6 +55,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     func animateAlertMessage() {
+    // Animation for the alert message
+        
         let anim = CABasicAnimation(keyPath: "opacity")
         anim.fromValue = 1.0
         anim.toValue = 0.0
@@ -67,6 +71,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    // Checks if there is at least 1 character in the emailField and passwordField. If so, the Login button becomes active and changes image to the active image.
+        
         if string != "" && emailField.text != "" {
             print("keyboard key click detected")
             loginButton.image = UIImage(named: "LoginActive")
@@ -87,6 +93,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             
         }
         loginAlertMessage.isHidden = true
+    }
+    
+    @IBAction func signUpButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "SignUpSegue", sender: nil)
     }
     
 }

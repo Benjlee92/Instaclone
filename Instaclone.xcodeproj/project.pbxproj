@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C085BF279534F65C1E3434A /* Pods_Instaclone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B16DC03458F39DCC23E02A /* Pods_Instaclone.framework */; };
 		B54A9A341EE2610100D365DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A331EE2610100D365DB /* AppDelegate.swift */; };
 		B54A9A391EE2610100D365DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54A9A371EE2610100D365DB /* Main.storyboard */; };
 		B54A9A3B1EE2610100D365DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54A9A3A1EE2610100D365DB /* Assets.xcassets */; };
@@ -17,10 +18,14 @@
 		B54A9A501EE26AEC00D365DB /* BlurredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A4F1EE26AEC00D365DB /* BlurredView.swift */; };
 		B54A9A521EE26DB700D365DB /* LoginCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A9A511EE26DB700D365DB /* LoginCustomView.swift */; };
 		B56BC3B31EE3425D00DF252C /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56BC3B21EE3425D00DF252C /* ForgotPasswordVC.swift */; };
-		B56BC3B51EE37BD800DF252C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B56BC3B41EE37BD800DF252C /* GoogleService-Info.plist */; };
+		B56BC3B71EE3AA5600DF252C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B56BC3B61EE3AA5600DF252C /* GoogleService-Info.plist */; };
+		B56BC3B91EE3B0D400DF252C /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56BC3B81EE3B0D400DF252C /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B16DC03458F39DCC23E02A /* Pods_Instaclone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instaclone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15330785FFA9B4C057CD6E56 /* Pods-Instaclone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instaclone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instaclone/Pods-Instaclone.release.xcconfig"; sourceTree = "<group>"; };
+		4BE7C528DEA23FEDDE676292 /* Pods-Instaclone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instaclone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instaclone/Pods-Instaclone.debug.xcconfig"; sourceTree = "<group>"; };
 		B54A9A301EE2610100D365DB /* Instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54A9A331EE2610100D365DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54A9A381EE2610100D365DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,7 +38,8 @@
 		B54A9A4F1EE26AEC00D365DB /* BlurredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredView.swift; sourceTree = "<group>"; };
 		B54A9A511EE26DB700D365DB /* LoginCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCustomView.swift; sourceTree = "<group>"; };
 		B56BC3B21EE3425D00DF252C /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
-		B56BC3B41EE37BD800DF252C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B56BC3B61EE3AA5600DF252C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B56BC3B81EE3B0D400DF252C /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C085BF279534F65C1E3434A /* Pods_Instaclone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E009FCAEC446AF4D7B2C69D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BE7C528DEA23FEDDE676292 /* Pods-Instaclone.debug.xcconfig */,
+				15330785FFA9B4C057CD6E56 /* Pods-Instaclone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95D6C4DA726306E63BEB68F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05B16DC03458F39DCC23E02A /* Pods_Instaclone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B54A9A271EE2610000D365DB = {
 			isa = PBXGroup;
 			children = (
 				B54A9A321EE2610100D365DB /* Instaclone */,
 				B54A9A311EE2610100D365DB /* Products */,
+				1E009FCAEC446AF4D7B2C69D /* Pods */,
+				95D6C4DA726306E63BEB68F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,7 +92,7 @@
 		B54A9A321EE2610100D365DB /* Instaclone */ = {
 			isa = PBXGroup;
 			children = (
-				B56BC3B41EE37BD800DF252C /* GoogleService-Info.plist */,
+				B56BC3B61EE3AA5600DF252C /* GoogleService-Info.plist */,
 				B54A9A481EE2615D00D365DB /* Resources */,
 				B54A9A471EE2612600D365DB /* Model */,
 				B54A9A461EE2611F00D365DB /* View */,
@@ -85,6 +111,7 @@
 			children = (
 				B54A9A4B1EE2631700D365DB /* LoginVC.swift */,
 				B56BC3B21EE3425D00DF252C /* ForgotPasswordVC.swift */,
+				B56BC3B81EE3B0D400DF252C /* SignUpVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -121,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54A9A421EE2610100D365DB /* Build configuration list for PBXNativeTarget "Instaclone" */;
 			buildPhases = (
+				EED81F4EDB883B1541B4F6F1 /* [CP] Check Pods Manifest.lock */,
 				B54A9A2C1EE2610100D365DB /* Sources */,
 				B54A9A2D1EE2610100D365DB /* Frameworks */,
 				B54A9A2E1EE2610100D365DB /* Resources */,
+				17EDF5B10E135A1DD788C26F /* [CP] Embed Pods Frameworks */,
+				BE9ED613C2340D301F6FF1BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,7 +205,7 @@
 			files = (
 				B54A9A3E1EE2610100D365DB /* LaunchScreen.storyboard in Resources */,
 				B54A9A4A1EE2617200D365DB /* Queen of Heaven.ttf in Resources */,
-				B56BC3B51EE37BD800DF252C /* GoogleService-Info.plist in Resources */,
+				B56BC3B71EE3AA5600DF252C /* GoogleService-Info.plist in Resources */,
 				B54A9A3B1EE2610100D365DB /* Assets.xcassets in Resources */,
 				B54A9A391EE2610100D365DB /* Main.storyboard in Resources */,
 			);
@@ -183,11 +213,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17EDF5B10E135A1DD788C26F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instaclone/Pods-Instaclone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9ED613C2340D301F6FF1BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instaclone/Pods-Instaclone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED81F4EDB883B1541B4F6F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B54A9A2C1EE2610100D365DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56BC3B91EE3B0D400DF252C /* SignUpVC.swift in Sources */,
 				B54A9A4C1EE2631700D365DB /* LoginVC.swift in Sources */,
 				B54A9A341EE2610100D365DB /* AppDelegate.swift in Sources */,
 				B56BC3B31EE3425D00DF252C /* ForgotPasswordVC.swift in Sources */,
@@ -312,6 +391,7 @@
 		};
 		B54A9A431EE2610100D365DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE7C528DEA23FEDDE676292 /* Pods-Instaclone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instaclone/Info.plist;
@@ -324,6 +404,7 @@
 		};
 		B54A9A441EE2610100D365DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15330785FFA9B4C057CD6E56 /* Pods-Instaclone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instaclone/Info.plist;
